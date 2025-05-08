@@ -27,6 +27,7 @@
   --color-brown-dark: #3b2c17;
   --color-light: #ffffff;
   --color-dark: #000000;
+  --color-secondary: #6c757d;
 
   /* Variables para las fuentes */
   --font-primary: "Inter", sans-serif;
@@ -48,7 +49,7 @@ body {
 
 /* this is a custom container for sections */
 .container {
-  max-width: 1350px;
+  max-width: 1250px;
   margin: 0 auto;
   width: 90%;
 }

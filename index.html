@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="/src/scripts/about-team/responsive.js"></script>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -57,7 +58,25 @@
       <main>
         <!----------- HERO SECTION ------------->
         <section id="hero">
-          <strong>H</strong>
+          <div class="container">
+            <div class="hero_content">
+              <div class="content__information">
+                <h6> Welcome to Ecoguardian</h6>
+                <h1> Innovation Care </h1>
+                <p> We take care of your plants future by innovating with technologies based on IoT giving you all the information you need. </p>
+                <button> 
+                  <p> Get Started</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <div class="content__image">
+                <img src="./src/assets/icons/farmer.png" alt="farmer" />
+              </div>
+            </div>
+          </div>
         </section>
         <!----------- ABOUT US SECTION ------------->
         <section id="about-us">
@@ -65,19 +84,366 @@
         </section>
         <!----------- BENTO GRID SECTION ------------->
         <section id="bento">
-          <strong>T</strong>
+          <div class="bento__container container">
+            <div class="bento__information">
+              <h2 class="bento__title">EcoGuardian Upcoming Cards & Events</h2>
+              <div class="bento__content">
+                <p class="bento__description">
+                  This platform provides a smart IoT solution for plant care, offering insights and recommendations. It ensures optimal growth through monitoring, statistics, and expert advice tailored to your needs.
+                </p>
+                <div class="bento__button" role="button">
+                  <span class="bento__button-text">View Gallery</span>
+                  <svg
+                    class="bento__button-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div id="bento-grid" class="bento__grid">
+              <a
+                class="bento__item bento__item--0"
+                data-pswp-width="1881"
+                data-pswp-height="1254"
+                data-pswp-src="./src/assets/images/bento/bento-slide-one.jpg"
+                data-cropped="true"
+                style="object-fit: cover"
+              >
+                <img
+                  class="bento__item-image"
+                  src="./src/assets/images/bento/bento-slide-one.jpg"
+                  alt=""
+                />
+                <div class="bento__item-content">
+                  <h2 class="bento__item-title">
+                    What <span>WeMade</span> for you
+                  </h2>
+                  <p class="bento__item-description line-clamp-two">
+                    With Ecoguardian you maintain a constant flow of information by taking use of our data gathering and processing system. 
+                    This ensures that your plants receive the best care possible.
+                  </p>
+                </div>
+              </a>
+              <a
+                class="bento__item bento__item--1"
+                data-pswp-width="1460"
+                data-pswp-height="974"
+                data-pswp-src="./src/assets/images/bento/bento-slide-nine.jpg"
+                data-cropped="true"
+                style="object-fit: cover"
+              >
+                <img
+                  class="bento__item-image"
+                  src="./src/assets/images/bento/bento-slide-nine.jpg"
+                  alt=""
+                />
+                <div class="bento__item-content">
+                  <h2 class="bento__item-title">
+                    Made for <span>Everyone</span>
+                  </h2>
+                  <p class="bento__item-description line-clamp-one">
+                    A lighter version for plant care enthusiasts.
+                  </p>
+                </div>
+              </a>
+              <a
+                class="bento__item bento__item--2"
+                data-pswp-width="1080"
+                data-pswp-height="720"
+                data-pswp-src="./src/assets/images/bento/bento-slide-two.webp"
+                data-cropped="true"
+                style="object-fit: cover"
+              >
+                <img
+                  class="bento__item-image"
+                  src="./src/assets/images/bento/bento-slide-two.webp"
+                  alt=""
+                />
+                <div class="bento__item-content">
+                  <h2 class="bento__item-title">
+                    <span>Easy</span> & <span>Effective</span>
+                  </h2>
+                  <p class="bento__item-description line-clamp-one">
+                    With our IoT system and interactive interface
+                  </p>
+                </div>
+              </a>
+              <a
+                class="bento__item bento__item--3"
+                data-pswp-width="1000"
+                data-pswp-height="1000"
+                data-pswp-src="./src/assets/images/bento/bento-slide-four.webp"
+                data-cropped="true"
+                style="object-fit: cover"
+              >
+                <img
+                  class="bento__item-image"
+                  src="./src/assets/images/bento/bento-slide-four.webp"
+                  alt=""
+                />
+                <div class="bento__item-content">
+                  <h2 class="bento__item-title">
+                    <span>Manage</span> &
+                    <span>Gain Feedback</span>
+                  </h2>
+                  <p class="bento__item-description line-clamp-one">
+                    With access to all the plant’s analytics
+                  </p>
+                </div>
+              </a>
+              <a
+                class="bento__item bento__item--4"
+                data-pswp-width="2400"
+                data-pswp-height="1200"
+                data-pswp-src="./src/assets/images/bento/bento-slide-six.jpg"
+                data-cropped="true"
+                style="object-fit: cover"
+              >
+                <img
+                  class="bento__item-image"
+                  src="./src/assets/images/bento/bento-slide-six.jpg"
+                  alt=""
+                />
+                <div class="bento__item-content">
+                  <h2 class="bento__item-title">
+                    <span>Available</span> at all times
+                  </h2>
+                  <p class="bento__item-description line-clamp-one">
+                    Our team of experts will aid you in all your inquiries, ensuring you receive the best support.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
         </section>
         <!----------- PAYMENTS SECTION ------------->
         <section id="payments">
           <strong>M</strong>
         </section>
         <!----------- ABOUT TEAM SECTION ------------->
-        <section id="about-team">
-          <strong>A</strong>
+        <section id="about-team" class="about-team">
+          <div class="about-team__overlay"></div>
+          <div class="about-team__grid">
+            <div class="about-team__card">
+              <div class="divider"></div>
+              <h2 class="about-team__title">
+                A group lead by <span class="highlight">Creativity</span> and <span class="highlight">Innovation</span>
+              </h2>
+              <div class="divider"></div>
+              <p class="about-team__subtitle">
+                Our Startup WeMade was build upon the foundations of a better more technologically available future
+              </p>
+            </div>
+            <div class="about-team__card">
+              <div class="about-team__card-content">
+                <img src="/src/assets/images/about-team/team-members/Sebastian-Ramirez-Hoffmann.jpeg" alt="Sebastian Ramirez" class="about-team__image">
+                <h3 class="about-team__name">Sebastian Ramirez</h3>
+                <p class="about-team__position-subtitle">Team Leader</p>
+                <div class="about-team__spacer"></div>
+                <p class="about-team__role">Full Stack Dev</p>
+                <div class="divider"></div>
+                <a href="https://github.com/SEBRH" class="about-team__link" target="_blank">
+                  GitHub <span class="redirect-icon">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="about-team__card">
+              <div class="about-team__card-content">
+                <img src="/src/assets/images/about-team/team-members/Gustavo-Huilca-Chipana.png" alt=">Gustavo Huilca" class="about-team__image">
+                <h3 class="about-team__name">Gustavo Huilca</h3>
+                <p class="about-team__position-subtitle">Team Member</p>
+                <div class="about-team__spacer"></div>
+                <p class="about-team__role">Full Stack Dev</p>
+                <div class="divider"></div>
+                <a href="https://github.com/GustavoHuilca31" class="about-team__link" target="_blank">
+                  GitHub <span class="redirect-icon">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="about-team__card">
+              <div class="about-team__card-content">
+                <img src="/src/assets/images/about-team/team-members/Nicolas-Esteban-Garcia.jpg" alt="Nicolas Esteban" class="about-team__image">
+                <h3 class="about-team__name">Nicolas Esteban</h3>
+                <p class="about-team__position-subtitle">Team Member</p>
+                <div class="about-team__spacer"></div>
+                <p class="about-team__role">Full Stack Dev</p>
+                <div class="divider"></div>
+                <a href="https://github.com/Nekolas777" class="about-team__link" target="_blank">
+                  GitHub <span class="redirect-icon">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="about-team__card">
+              <div class="about-team__card-content">
+                <img src="/src/assets/images/about-team/team-members/Italo-Luna-Capunay.webp" alt="Italo Luna" class="about-team__image">
+                <h3 class="about-team__name">Italo Luna</h3>
+                <p class="about-team__position-subtitle">Team Member</p>
+                <div class="about-team__spacer"></div>
+                <p class="about-team__role">Full Stack Dev</p>
+                <div class="divider"></div>
+                <a href="https://github.com/tatoft" class="about-team__link" target="_blank">
+                  GitHub <span class="redirect-icon">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="about-team__card">
+              <div class="about-team__card-content">
+                <img src="/src/assets/images/about-team/team-members/Manuel-Peña-Rivera.jpg" alt="Manuel Peña" class="about-team__image">
+                <h3 class="about-team__name">Manuel Peña</h3>
+                <p class="about-team__position-subtitle">Team Member</p>
+                <div class="about-team__spacer"></div>
+                <p class="about-team__role">Full Stack Dev</p>
+                <div class="divider"></div>
+                <a href="https://github.com/U202210138" class="about-team__link" target="_blank">
+                  GitHub <span class="redirect-icon">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="about-team__card">
+              <div class="about-team__card-content">
+                <img src="/src/assets/images/about-team/team-members/Mathias-Jave-Diaz.png" alt="Mathias Jave" class="about-team__image">
+                <h3 class="about-team__name">Mathias Jave</h3>
+                <p class="about-team__position-subtitle">Team Member</p>
+                <div class="about-team__spacer"></div>
+                <p class="about-team__role">Full Stack Dev</p>
+                <div class="divider"></div>
+                <a href="https://github.com/LordMathi2741" class="about-team__link" target="_blank">
+                  GitHub <span class="redirect-icon">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="about-team__card">
+              <div class="about-team__card-content">
+                <img src="/src/assets/images/about-team/team-members/Mathias-Kunimoto.png" alt="Mathias Kunimoto" class="about-team__image">
+                <h3 class="about-team__name">Mathias Kunimoto</h3>
+                <p class="about-team__position-subtitle">Team Member</p>
+                <div class="about-team__spacer"></div>
+                <p class="about-team__role">Full Stack Dev</p>
+                <div class="divider"></div>
+                <a href="https://github.com/kuni2005" class="about-team__link" target="_blank">
+                  GitHub <span class="redirect-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
         <!----------- CONTACT US SECTION ------------->
-        <section id="contact-us">
-          <strong>N</strong>
+        <section id="contact" class="contact">
+          <div class="contact__container container">
+            <div class="contact__info">
+              <h1 class="contact__info-title">Got a question or feedback?</h1>
+              <p class="contact__info-description">
+                We're here to help! Reach out to us via email, phone, or fill
+                out the form and we'll get back to you ASAP.
+              </p>
+              <div class="contact__info-details">
+                <div class="contact__info-details-icon">
+                  <svg
+                    class="contact__info-details-icon-image"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="contact__info-details-text">ecoguardian@gmail.com</p>
+              </div>
+              <div class="contact__info-details">
+                <div class="contact__info-details-icon">
+                  <svg
+                    class="contact__info-details-icon-image"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="contact__info-details-text">+51 839 293 299</p>
+              </div>
+              <div class="contact__info-map">
+                <iframe
+                  class="contact__info-map-frame"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706.0662733137515!2d-77.05111083053714!3d-12.087890790056782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8560da88193%3A0xc96db500423dd90c!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas!5e0!3m2!1ses!2spe!4v1746739102441!5m2!1ses!2spe"
+                  style="border: 0px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <form class="contact__form">
+              <div class="contact__form-group">
+                <div class="contact__form-field">
+                  <h2 class="contact__form-field-label">
+                    First Name
+                    <span class="contact__form-field-required">*</span>
+                  </h2>
+                  <input
+                    class="contact__form-field-input"
+                    type="text"
+                    name="name"
+                    placeholder="Nekolas"
+                  />
+                </div>
+                <div class="contact__form-field">
+                  <h2 class="contact__form-field-label">
+                    Last Name
+                    <span class="contact__form-field-required">*</span>
+                  </h2>
+                  <input
+                    class="contact__form-field-input"
+                    type="text"
+                    name="name"
+                    placeholder="Nekolas"
+                  />
+                </div>
+              </div>
+              <div class="contact__form-field">
+                <h2 class="contact__form-field-label">
+                  Email <span class="contact__form-field-required">*</span>
+                </h2>
+                <input
+                  class="contact__form-field-input"
+                  type="email"
+                  name="name"
+                  placeholder="Nekolas"
+                />
+              </div>
+              <div class="contact__form-field">
+                <h2 class="contact__form-field-label">
+                  Phone Number
+                  <span class="contact__form-field-required">*</span>
+                </h2>
+                <input
+                  class="contact__form-field-input"
+                  type="number"
+                  name="name"
+                  placeholder="946 547 814"
+                />
+              </div>
+              <div class="contact__form-field">
+                <h2 class="contact__form-field-label">
+                  What can we help you with?
+                </h2>
+                <textarea
+                  class="contact__form-field-textarea"
+                  name="message"
+                ></textarea>
+              </div>
+              <button class="contact__form-button">Submit</button>
+            </form>
+          </div>
         </section>
       </main>
       <!----------- FOOTER ------------->
@@ -89,3 +455,5 @@
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+
