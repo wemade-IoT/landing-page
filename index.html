@@ -10,21 +10,50 @@
   <body>
     <div id="app">
       <!----------- NAVBAR ------------->
-      <header><a href="#hero" style="height: 100%;">
-        <img src="/src/assets/icons/ecoguardian_logo-text.webp" alt="Logo" width="auto" height="100%" />
-      </a>
-        <nav class="navbar">
+      <header>
+        <a href="#hero" class="logo-link">
+          <img src="/public/logo.svg" alt="EcoGuardian Logo" class="header-logo">
+          <span class="logo-text">EcoGuardian</span>
+        </a>
+        <nav class="navbar-desktop">
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about-us">Eco Guardian</a></li>
+            <li><a href="#about-us">About Us</a></li>
             <li><a href="#bento">Benefits</a></li>
             <li><a href="#payments">Pricing</a></li>
-            <li><a href="#about-team">About Us</a></li>
+            <li><a href="#about-team">About Team</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
           </ul>
         </nav>
         <a href="#payments" id="nav__button">Get Started</a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </header>
+
+      <!-- Menu Overlay -->
+      <div class="navbar-overlay">
+        <div class="navbar-modal">
+          <button class="navbar-close" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <nav class="navbar-menu">
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#bento">Benefits</a></li>
+              <li><a href="#payments">Pricing</a></li>
+              <li><a href="#about-team">About Team</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+          </nav>
+          <a href="#payments" class="navbar-button">Get Started</a>
+        </div>
+      </div>
       <main>
         <!----------- HERO SECTION ------------->
         <section id="hero">
