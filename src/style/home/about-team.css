@@ -1,3 +1,136 @@
-#about-team {
-  background-color: #e29393;
+.about-team {
+  position: relative;
+  padding: 60px 0;
+  overflow: hidden;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
 }
+
+.about-team__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/images/about-team/about-team-background.png');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+  z-index: 0;
+}
+
+.about-team .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.about-team__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 219px);
+  grid-template-rows: repeat(2, 320px);
+  gap: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.about-team__card {
+  width: 219px;
+  height: 320px;
+  background-color: var(--color-beige);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-team__card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-team__title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.about-team__title .highlight {
+  color: var(--color-green-dark);
+}
+
+.about-team__subtitle {
+  font-size: 12px;
+  font-weight: 200;
+  margin-top: 5px;
+  text-align: left;
+}
+
+
+.about-team__card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-team__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px dashed var(--color-green-dark);
+  object-fit: cover;
+}
+
+.about-team__name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.about-team__position-subtitle {
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.about-team__spacer {
+  height: 30px;
+}
+
+.about-team__role {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+.divider {
+  border: 1px solid #C3C1C1;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.about-team__link {
+  color: var(--color-green-dark);
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.redirect-icon {
+  display: inline-block;
+  margin-left: 2px;
+}
+

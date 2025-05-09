@@ -1,4 +1,5 @@
 @import url('normalize.css');
+@import url('animations.css');
 @import url('home/navbar.css');
 @import url('home/hero.css');
 @import url('home/about-us.css');
@@ -7,3 +8,4 @@
 @import url('home/about-team.css');
 @import url('home/contact.css');
 @import url('home/footer.css');
+@import url('home/utilities.css');

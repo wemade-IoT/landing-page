@@ -1,3 +1,105 @@
 #hero {
-  background-color: red;
+  background-image: url("/src/assets/images/hero-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 4.5rem;
+  font-family: var(--font-primary);
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__content--left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  color: var(--color-light);
+  flex: 1;
+}
+
+.hero__welcome {
+  font-size: 1.1rem;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--color-beige);
+}
+
+.hero__title {
+  font-family: var(--font-secondary);
+  font-size: 5.8rem;
+  max-width: 15ch;
+  line-height: 0.95;
+  letter-spacing: 5px;
+}
+
+.hero__title span {
+  color: var(--color-green-light);
+}
+
+.hero__description {
+  max-width: 54ch;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #DDDDDD;
+}
+
+.hero__button {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-self: flex-start;
+  padding: 0.5rem 2.5rem;
+  background-color: var(--color-green-dark);
+  color: var(--color-light);
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.hero__button:hover {
+  background-color: #3F7D58;
+  color: #ffffff;
+}
+
+.hero__button:hover .hero__button-icon {
+  animation: bounce-right 0.6s infinite; /* Aplica la animación en hover */
+}
+
+.hero__content--right {
+  margin-top: 32px;
+  width: 350px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+
+  #hero {
+    padding: 4rem 0;
+  }
+
+  .hero__content--right {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero__welcome {
+    font-size: 0.9rem;
+  }
+  
+  .hero__title {
+    font-size: 4.4rem;
+  }
+  
+  .hero__description {
+    font-size: 0.9rem;
+  }
+
 }

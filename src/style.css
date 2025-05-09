@@ -2,12 +2,19 @@
 
 /* si necesitamos agregar otra fuente asegurar que sea en formato woff2, es la mas optimizada */
 @font-face {
-  font-family: "MiFuentePersonalizada";
-  src: url("/fonts/CoveredByYourGrace.woff2") format("woff2"),
-    url("/fonts/Inter.woff") format("woff2");
+  font-family: "CoveredByYourGrace";
+  src: url("/fonts/CoveredByYourGrace.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
-  font-weight: 100 - 900;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
 }
 
 :root {
@@ -27,28 +34,29 @@
   --color-brown-dark: #3b2c17;
   --color-light: #ffffff;
   --color-dark: #000000;
+  --color-secondary: #6c757d;
 
   /* Variables para las fuentes */
   --font-primary: "Inter", sans-serif;
-  --font-secondary: "MiFuentePersonalizada", sans-serif;
+  --font-secondary: "CoveredByYourGrace", sans-serif;
 }
 
 body {
   min-height: 100%;
   font-family: var(--font-primary);
-  position: relative;
+  z-index: 100;
 }
 
 #app {
   min-height: 100dvh;
-  display: grid;
-  grid-template-rows: 80px 1fr auto;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 /* this is a custom container for sections */
 .container {
-  max-width: 1350px;
+  max-width: 1250px;
   margin: 0 auto;
   width: 90%;
 }
@@ -56,4 +64,8 @@ body {
 /* para testeo */
 .border {
   border: 1px solid red;
+}
+
+html {
+  scroll-behavior: smooth;
 }
