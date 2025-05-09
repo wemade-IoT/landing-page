@@ -1,3 +1,238 @@
-#payments {
-  background-color: #9d90e4;
+.payments {
+  background-color: #fdf8ec;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payments__content {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.payments__image {
+  flex: 2;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payments__image img {
+  width: 100%;
+  height: auto;
+}
+
+.payments__details {
+  flex: 3;
+  padding-left: 40px;
+}
+
+.payments__text {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.payments__title {
+  font-size: 1.5rem;
+  color: #578257;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.payments__subtitle {
+  font-size: 3rem;
+  color: #2B2B2B;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.payments__description {
+  font-size: 1rem;
+  color: #000;
+  text-align: left;
+  margin-left: 20px; /* Indentar las descripciones */
+  margin-bottom: 5px;
+}
+
+.payments__plans {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: stretch; 
+}
+
+.plan {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  min-height: 300px; 
+}
+
+.plan__title {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.plan__title::after {
+  content: "";
+  display: block;
+  width: 70%; /* Ajustar el ancho de la línea */
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px auto 0;
+}
+
+.plan__divider {
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.plan__price {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 10px 0;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.plan__price span {
+  font-size: 1rem;
+  color: #555;
+  font-weight: normal;
+}
+
+.plan__features {
+  list-style: disc inside;
+  padding: 0;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.plan__features li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.plan__button {
+  background-color: #578257;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.plan__button:hover {
+  background-color: #275a27;
+}
+
+.footer {
+  background-color: #578257;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer__text {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .payments {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+
+  .payments__content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .payments__image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .payments__details {
+    padding-left: 0;
+  }
+
+  .payments__plans {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .plan {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 787px) {
+  .payments {
+    padding: 20px 10px;
+  }
+
+  .payments__title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .payments__subtitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .payments__description {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .payments__plans {
+    gap: 15px;
+  }
+
+  .plan {
+    padding: 15px;
+  }
+
+  .plan__title {
+    font-size: 1rem;
+  }
+
+  .plan__price {
+    font-size: 1.2rem;
+  }
+
+  .plan__features li {
+    font-size: 0.8rem;
+  }
+
+  .plan__button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
 }

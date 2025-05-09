@@ -1,761 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <title>Eco Guardian</title>
-  </head>
-  <body>
-    <div id="app">
-      <div
-        id="overlay"
-        onclick="closeNav()"
-        style="width: 0%; opacity: 0"
-      ></div>
-
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <a href="#hero">Home</a>
-        <a href="#about-us">Eco Guardian</a>
-        <a href="#bento">Benefits</a>
-        <a href="#payments">Pricing</a>
-        <a href="#about-team">About Us</a>
-        <a href="#contact-us">Contact Us</a>
-        <a
-          href="#payments"
-          id="nav__button"
-          style="display: inline-block; width: 10rem; margin-left: 1rem"
-          >Get Started</a
-        >
-      </div>
-
-      <!----------- NAVBAR ------------->
-      <header class="transparent">
-        <div class="navbar__container">
-          <a href="#hero" style="height: 100%; width: 10rem">
-            <div style="display: flex; flex-direction: row">
-              <img
-                src="/src/assets/icons/ecoguardian_logo-text.webp"
-                alt="Logo"
-                width="auto"
-              />
-              <div
-                style="
-                  display: flex;
-                  flex-direction: column;
-                  margin-left: 0.5rem;
-                  align-items: start;
-                  justify-content: center;
-                "
-              >
-                <h1 style="font-size: 1.5rem; transition: 0.5s">EcoGuardian</h1>
-                <p style="font-size: 0.9rem; transition: 0.5s">
-                  Nurturing your future
-                </p>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css" />
+  <title>Eco Guardian</title>
+</head>
+<body>
+  <div id="app">
+    <!----------- NAVBAR ------------->
+    <header style="border: 1px solid #000">
+      <h1>Eco Guardian</h1>
+    </header>
+    <main>
+      <!----------- HERO SECTION ------------->
+      <section id="hero">
+        <strong>H</strong>
+      </section>
+      <!----------- ABOUT US SECTION ------------->
+      <section id="about-us">
+        <strong>O</strong>
+      </section>
+      <!----------- BENTO GRID SECTION ------------->
+      <section id="bento">
+        <strong>T</strong>
+      </section>
+      <!-- PAYMENTS SECTION -->
+      <section class="payments">
+        <div class="payments__content">
+          <div class="payments__image">
+            <img src="/src/assets/images/img-cell.png" alt="Eco Guardian on devices" />
+          </div>
+          <div class="payments__details">
+            <div class="payments__text">
+              <h2 class="payments__title">In both desktop and mobile</h2>
+              <h3 class="payments__subtitle">What are you waiting for?</h3>
+              <p class="payments__description">Sign up and improve the quality of life in your garden</p>
+              <p class="payments__description">Select a payment plan depending on your needs</p>
             </div>
-          </a>
-          <nav class="navbar">
-            <ul>
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#about-us">Eco Guardian</a></li>
-              <li><a href="#bento">Benefits</a></li>
-              <li><a href="#payments">Pricing</a></li>
-              <li><a href="#about-team">About Us</a></li>
-              <li><a href="#contact-us">Contact Us</a></li>
-            </ul>
-          </nav>
-          <a href="#payments" id="nav__button">Get Started</a>
-          <span
-            id="sidenav__button"
-            style="font-size: 30px; cursor: pointer"
-            onclick="openNav()"
-            >&#9776;</span
-          >
-        </div>
-      </header>
-      <main style="height: 100%;">
-          <!----------- HERO SECTION ------------->
-          <section id="hero" class="hero">
-            <div class="hero__container container">
-              <div class="hero__content hero__content--left">
-                <span class="hero__welcome">Welcome to Ecoguardian</span>
-                <h1 class="hero__title">Innovation <span>&</span> Care</h1>
-                <p class="hero__description line-clamp-two">
-                  We take care of your plants future by innovating with
-                  technologies based on IoT giving you all the information you
-                  need.
-                </p>
-                <button class="hero__button">
-                  <span class="hero__button-text">Get Started</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="hero__button-icon"
-                  >
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </button>
-              </div>
-              <figure class="hero__content hero__content--right">
-                <img
-                  src="./src/assets/images/farmer2.png"
-                  alt="farmer"
-                  class="hero__image"
-                />
-              </figure>
-            </div>
-          </section>
-          <!----------- ABOUT US SECTION ------------->
-          <section id="about-us">
-            <div class="container">
-              <div class="about-us-left">
-                <div class="main-image-wrapper">
-                  <img
-                    src="./src/assets/images/image.png"
-                    alt="Technology Showcase"
-                    class="main-image"
-                  />
-                  <button class="video-btn">
-                    <span class="play-icon">▶</span>
-                  </button>
-                </div>
-                <div class="secondary-image-wrapper">
-                  <img
-                    src="./src/assets/images/image 24.png"
-                    alt="Secondary"
-                    class="secondary-image"
-                  />
-                </div>
-              </div>
-              <div class="about-us-right">
-                <p class="experience">+1 Year of Experience</p>
-                <h1 class="title">High end Tecnologies & usefull analytics</h1>
-                <div class="description-block">
-                  <p class="description-bold">
-                    With over 200 experts giving you all the advices you need
-                  </p>
-                  <p class="description">
-                    Monitor and analyze your plants and plantations data by
-                    using our sensors and services focused on increasing the
-                    performance and well being of your plants.
-                  </p>
-                </div>
-                <ul class="list">
-                  <li>
-                    If you need to monitor the state of your plant or plantation
-                  </li>
-                  <li>
-                    Farmers and enthusiasts all over the globe are using this
-                    kind of technology
-                  </li>
+            <div class="payments__plans">
+              <div class="plan">
+                <h3 class="plan__title">Domestic</h3>
+                <p class="plan__price">$5.00 <span>/ month</span></p>
+                <ul class="plan__features">
+                  <li>Up to 5 plants to manage</li>
+                  <li>5 Expert Inquiries per week</li>
+                  <li>Access to our sensors</li>
+                  <li>Free installation for 3 plants</li>
+                  <li>Insights and Recommendations</li>
                 </ul>
-                <a href="#" class="cta">Find out more ↗</a>
+                <button class="plan__button">Sign Up ↗</button>
               </div>
-            </div>
-          </section>
-          <!----------- BENTO GRID SECTION ------------->
-          <section id="bento">
-            <div class="bento__container container">
-              <div class="bento__information">
-                <h2 class="bento__title">
-                  EcoGuardian Upcoming Cards & Events
-                </h2>
-                <div class="bento__content">
-                  <p class="bento__description">
-                    This platform provides a smart IoT solution for plant care,
-                    offering insights and recommendations. It ensures optimal
-                    growth through monitoring, statistics, and expert advice
-                    tailored to your needs.
-                  </p>
-                  <div class="bento__button" role="button">
-                    <span class="bento__button-text">View Gallery</span>
-                    <svg
-                      class="bento__button-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                      />
-                    </svg>
-                  </div>
-                </div>
+              <div class="plan">
+                <h3 class="plan__title">Enterprise</h3>
+                <p class="plan__price">$250.00 <span>/ month</span></p>
+                <ul class="plan__features">
+                  <li>Up to 5 plants to manage</li>
+                  <li>5 Expert Inquiries per week</li>
+                  <li>Access to our sensors</li>
+                  <li>Free installation for 3 plants</li>
+                </ul>
+                <button class="plan__button">Sign Up ↗</button>
               </div>
-              <div id="bento-grid" class="bento__grid">
-                <a
-                  class="bento__item bento__item--0"
-                  data-pswp-width="1881"
-                  data-pswp-height="1254"
-                  data-pswp-src="./src/assets/images/bento/bento-slide-one.jpg"
-                  data-cropped="true"
-                  style="object-fit: cover"
-                >
-                  <img
-                    class="bento__item-image"
-                    src="./src/assets/images/bento/bento-slide-one.jpg"
-                    alt=""
-                  />
-                  <div class="bento__item-content">
-                    <h2 class="bento__item-title">
-                      What <span>WeMade</span> for you
-                    </h2>
-                    <p class="bento__item-description line-clamp-two">
-                      With Ecoguardian you maintain a constant flow of
-                      information by taking use of our data gathering and
-                      processing system. This ensures that your plants receive
-                      the best care possible.
-                    </p>
-                  </div>
-                </a>
-                <a
-                  class="bento__item bento__item--1"
-                  data-pswp-width="1460"
-                  data-pswp-height="974"
-                  data-pswp-src="./src/assets/images/bento/bento-slide-nine.jpg"
-                  data-cropped="true"
-                  style="object-fit: cover"
-                >
-                  <img
-                    class="bento__item-image"
-                    src="./src/assets/images/bento/bento-slide-nine.jpg"
-                    alt=""
-                  />
-                  <div class="bento__item-content">
-                    <h2 class="bento__item-title">
-                      Made for <span>Everyone</span>
-                    </h2>
-                    <p class="bento__item-description line-clamp-one">
-                      A lighter version for plant care enthusiasts.
-                    </p>
-                  </div>
-                </a>
-                <a
-                  class="bento__item bento__item--2"
-                  data-pswp-width="1080"
-                  data-pswp-height="720"
-                  data-pswp-src="./src/assets/images/bento/bento-slide-two.webp"
-                  data-cropped="true"
-                  style="object-fit: cover"
-                >
-                  <img
-                    class="bento__item-image"
-                    src="./src/assets/images/bento/bento-slide-two.webp"
-                    alt=""
-                  />
-                  <div class="bento__item-content">
-                    <h2 class="bento__item-title">
-                      <span>Easy</span> & <span>Effective</span>
-                    </h2>
-                    <p class="bento__item-description line-clamp-one">
-                      With our IoT system and interactive interface
-                    </p>
-                  </div>
-                </a>
-                <a
-                  class="bento__item bento__item--3"
-                  data-pswp-width="1000"
-                  data-pswp-height="1000"
-                  data-pswp-src="./src/assets/images/bento/bento-slide-four.webp"
-                  data-cropped="true"
-                  style="object-fit: cover"
-                >
-                  <img
-                    class="bento__item-image"
-                    src="./src/assets/images/bento/bento-slide-four.webp"
-                    alt=""
-                  />
-                  <div class="bento__item-content">
-                    <h2 class="bento__item-title">
-                      <span>Manage</span> &
-                      <span>Gain Feedback</span>
-                    </h2>
-                    <p class="bento__item-description line-clamp-one">
-                      With access to all the plant’s analytics
-                    </p>
-                  </div>
-                </a>
-                <a
-                  class="bento__item bento__item--4"
-                  data-pswp-width="2400"
-                  data-pswp-height="1200"
-                  data-pswp-src="./src/assets/images/bento/bento-slide-six.jpg"
-                  data-cropped="true"
-                  style="object-fit: cover"
-                >
-                  <img
-                    class="bento__item-image"
-                    src="./src/assets/images/bento/bento-slide-six.jpg"
-                    alt=""
-                  />
-                  <div class="bento__item-content">
-                    <h2 class="bento__item-title">
-                      <span>Available</span> at all times
-                    </h2>
-                    <p class="bento__item-description line-clamp-one">
-                      Our team of experts will aid you in all your inquiries,
-                      ensuring you receive the best support.
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </section>
-          <!----------- PAYMENTS SECTION ------------->
-          <section id="payments">
-            <strong>M</strong>
-          </section>
-          <!----------- ABOUT TEAM SECTION ------------->
-          <section id="about-team" class="about-team">
-            <div class="about-team__overlay"></div>
-            <div class="about-team__grid">
-              <div class="about-team__card">
-                <div class="divider"></div>
-                <h2 class="about-team__title">
-                  A group lead by <span class="highlight">Creativity</span> and
-                  <span class="highlight">Innovation</span>
-                </h2>
-                <div class="divider"></div>
-                <p class="about-team__subtitle">
-                  Our Startup WeMade was build upon the foundations of a better
-                  more technologically available future
-                </p>
-              </div>
-              <div class="about-team__card">
-                <div class="about-team__card-content">
-                  <img
-                    src="/src/assets/images/about-team/team-members/Sebastian-Ramirez-Hoffmann.jpeg"
-                    alt="Sebastian Ramirez"
-                    class="about-team__image"
-                  />
-                  <h3 class="about-team__name">Sebastian Ramirez</h3>
-                  <p class="about-team__position-subtitle">Team Leader</p>
-                  <div class="about-team__spacer"></div>
-                  <p class="about-team__role">Full Stack Dev</p>
-                  <div class="divider"></div>
-                  <a
-                    href="https://github.com/SEBRH"
-                    class="about-team__link"
-                    target="_blank"
-                  >
-                    GitHub <span class="redirect-icon">↗</span>
-                  </a>
-                </div>
-              </div>
-              <div class="about-team__card">
-                <div class="about-team__card-content">
-                  <img
-                    src="/src/assets/images/about-team/team-members/Gustavo-Huilca-Chipana.png"
-                    alt=">Gustavo Huilca"
-                    class="about-team__image"
-                  />
-                  <h3 class="about-team__name">Gustavo Huilca</h3>
-                  <p class="about-team__position-subtitle">Team Member</p>
-                  <div class="about-team__spacer"></div>
-                  <p class="about-team__role">Full Stack Dev</p>
-                  <div class="divider"></div>
-                  <a
-                    href="https://github.com/GustavoHuilca31"
-                    class="about-team__link"
-                    target="_blank"
-                  >
-                    GitHub <span class="redirect-icon">↗</span>
-                  </a>
-                </div>
-              </div>
-              <div class="about-team__card">
-                <div class="about-team__card-content">
-                  <img
-                    src="/src/assets/images/about-team/team-members/Nicolas-Esteban-Garcia.jpg"
-                    alt="Nicolas Esteban"
-                    class="about-team__image"
-                  />
-                  <h3 class="about-team__name">Nicolas Esteban</h3>
-                  <p class="about-team__position-subtitle">Team Member</p>
-                  <div class="about-team__spacer"></div>
-                  <p class="about-team__role">Full Stack Dev</p>
-                  <div class="divider"></div>
-                  <a
-                    href="https://github.com/Nekolas777"
-                    class="about-team__link"
-                    target="_blank"
-                  >
-                    GitHub <span class="redirect-icon">↗</span>
-                  </a>
-                </div>
-              </div>
-              <div class="about-team__card">
-                <div class="about-team__card-content">
-                  <img
-                    src="/src/assets/images/about-team/team-members/Italo-Luna-Capunay.webp"
-                    alt="Italo Luna"
-                    class="about-team__image"
-                  />
-                  <h3 class="about-team__name">Italo Luna</h3>
-                  <p class="about-team__position-subtitle">Team Member</p>
-                  <div class="about-team__spacer"></div>
-                  <p class="about-team__role">Full Stack Dev</p>
-                  <div class="divider"></div>
-                  <a
-                    href="https://github.com/tatoft"
-                    class="about-team__link"
-                    target="_blank"
-                  >
-                    GitHub <span class="redirect-icon">↗</span>
-                  </a>
-                </div>
-              </div>
-              <div class="about-team__card">
-                <div class="about-team__card-content">
-                  <img
-                    src="/src/assets/images/about-team/team-members/Manuel-Peña-Rivera.jpg"
-                    alt="Manuel Peña"
-                    class="about-team__image"
-                  />
-                  <h3 class="about-team__name">Manuel Peña</h3>
-                  <p class="about-team__position-subtitle">Team Member</p>
-                  <div class="about-team__spacer"></div>
-                  <p class="about-team__role">Full Stack Dev</p>
-                  <div class="divider"></div>
-                  <a
-                    href="https://github.com/U202210138"
-                    class="about-team__link"
-                    target="_blank"
-                  >
-                    GitHub <span class="redirect-icon">↗</span>
-                  </a>
-                </div>
-              </div>
-              <div class="about-team__card">
-                <div class="about-team__card-content">
-                  <img
-                    src="/src/assets/images/about-team/team-members/Mathias-Jave-Diaz.png"
-                    alt="Mathias Jave"
-                    class="about-team__image"
-                  />
-                  <h3 class="about-team__name">Mathias Jave</h3>
-                  <p class="about-team__position-subtitle">Team Member</p>
-                  <div class="about-team__spacer"></div>
-                  <p class="about-team__role">Full Stack Dev</p>
-                  <div class="divider"></div>
-                  <a
-                    href="https://github.com/LordMathi2741"
-                    class="about-team__link"
-                    target="_blank"
-                  >
-                    GitHub <span class="redirect-icon">↗</span>
-                  </a>
-                </div>
-              </div>
-              <div class="about-team__card">
-                <div class="about-team__card-content">
-                  <img
-                    src="/src/assets/images/about-team/team-members/Mathias-Kunimoto.png"
-                    alt="Mathias Kunimoto"
-                    class="about-team__image"
-                  />
-                  <h3 class="about-team__name">Mathias Kunimoto</h3>
-                  <p class="about-team__position-subtitle">Team Member</p>
-                  <div class="about-team__spacer"></div>
-                  <p class="about-team__role">Full Stack Dev</p>
-                  <div class="divider"></div>
-                  <a
-                    href="https://github.com/kuni2005"
-                    class="about-team__link"
-                    target="_blank"
-                  >
-                    GitHub <span class="redirect-icon">↗</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!----------- CONTACT US SECTION ------------->
-          <section id="contact" class="contact">
-            <div class="contact__container container">
-              <div class="contact__info">
-                <h1 class="contact__info-title">Got a question or feedback?</h1>
-                <p class="contact__info-description">
-                  We're here to help! Reach out to us via email, phone, or fill
-                  out the form and we'll get back to you ASAP.
-                </p>
-                <div class="contact__info-details">
-                  <div class="contact__info-details-icon">
-                    <svg
-                      class="contact__info-details-icon-image"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <p class="contact__info-details-text">
-                    ecoguardian@gmail.com
-                  </p>
-                </div>
-                <div class="contact__info-details">
-                  <div class="contact__info-details-icon">
-                    <svg
-                      class="contact__info-details-icon-image"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <p class="contact__info-details-text">+51 839 293 299</p>
-                </div>
-                <div class="contact__info-map">
-                  <iframe
-                    class="contact__info-map-frame"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706.0662733137515!2d-77.05111083053714!3d-12.087890790056782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8560da88193%3A0xc96db500423dd90c!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas!5e0!3m2!1ses!2spe!4v1746739102441!5m2!1ses!2spe"
-                    style="border: 0px"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-              </div>
-              <form class="contact__form">
-                <div class="contact__form-group">
-                  <div class="contact__form-field">
-                    <h2 class="contact__form-field-label">
-                      First Name
-                      <span class="contact__form-field-required">*</span>
-                    </h2>
-                    <input
-                      class="contact__form-field-input"
-                      type="text"
-                      name="name"
-                      placeholder="Nekolas"
-                    />
-                  </div>
-                  <div class="contact__form-field">
-                    <h2 class="contact__form-field-label">
-                      Last Name
-                      <span class="contact__form-field-required">*</span>
-                    </h2>
-                    <input
-                      class="contact__form-field-input"
-                      type="text"
-                      name="name"
-                      placeholder="Nekolas"
-                    />
-                  </div>
-                </div>
-                <div class="contact__form-field">
-                  <h2 class="contact__form-field-label">
-                    Email <span class="contact__form-field-required">*</span>
-                  </h2>
-                  <input
-                    class="contact__form-field-input"
-                    type="email"
-                    name="name"
-                    placeholder="Nekolas"
-                  />
-                </div>
-                <div class="contact__form-field">
-                  <h2 class="contact__form-field-label">
-                    Phone Number
-                    <span class="contact__form-field-required">*</span>
-                  </h2>
-                  <input
-                    class="contact__form-field-input"
-                    type="number"
-                    name="name"
-                    placeholder="946 547 814"
-                  />
-                </div>
-                <div class="contact__form-field">
-                  <h2 class="contact__form-field-label">
-                    What can we help you with?
-                  </h2>
-                  <textarea
-                    class="contact__form-field-textarea"
-                    name="message"
-                  ></textarea>
-                </div>
-                <button class="contact__form-button">Submit</button>
-              </form>
-            </div>
-          </section>
-      </main>
-      <!----------- FOOTER ------------->
-      <footer class="footer">
-        <div class="container footer__container">
-          <!-- Logo and Social Media Icons -->
-          <div class="footer__brand-column">
-            <div class="footer__logo-wrapper">
-              <img
-                src="/public/logo.svg"
-                alt="EcoGuardian Logo"
-                class="footer__logo"
-              />
-              <div class="footer__brand-text">
-                <h2 class="footer__brand-name">EcoGuardian</h2>
-                <p class="footer__tagline">Nurturing your future</p>
-              </div>
-            </div>
-            <div class="footer__social-icons">
-              <a
-                href="https://avatars.githubusercontent.com/u/207313682?s=400&u=2d49dcb274216345f5bd20f7b0d70f94b93698eb&v=4"
-                target="_blank"
-                class="footer__social-link"
-                aria-label="Twitter"
-              >
-                <svg
-                  class="footer__social-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.instagram.com/piter_gc/"
-                target="_blank"
-                class="footer__social-link"
-                aria-label="Instagram"
-              >
-                <svg
-                  class="footer__social-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/samira-jaa/"
-                target="_blank"
-                class="footer__social-link"
-                aria-label="LinkedIn"
-              >
-                <svg
-                  class="footer__social-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Explore Links -->
-          <div class="footer__nav-column">
-            <h3 class="footer__heading">Explore</h3>
-            <nav class="footer__nav">
-              <ul class="footer__menu">
-                <li class="footer__menu-item">
-                  <a href="#hero" class="footer__menu-link">Home</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a href="#about-us" class="footer__menu-link"
-                    >About EcoGuardian</a
-                  >
-                </li>
-                <li class="footer__menu-item">
-                  <a href="#bento" class="footer__menu-link">Benefits</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a href="#about-team" class="footer__menu-link"
-                    >About the team</a
-                  >
-                </li>
-                <li class="footer__menu-item">
-                  <a href="#payments" class="footer__menu-link">Pricing</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a href="#contact-us" class="footer__menu-link">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <!-- Contact Us -->
-          <div class="footer__contact-column">
-            <h3 class="footer__heading">Contact us</h3>
-            <div class="footer__contact-info">
-              <a href="mailto:we.made@gmail.com" class="footer__contact-link">
-                <svg
-                  class="footer__contact-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-                  />
-                </svg>
-                we.made@gmail.com
-              </a>
-              <a href="tel:+51946547814" class="footer__contact-link">
-                <svg
-                  class="footer__contact-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
-                  />
-                </svg>
-                +51 946 547 814
-              </a>
-              <div class="footer__subscribe">
-                <input
-                  type="email"
-                  placeholder="neko@gmail.com"
-                  class="footer__input"
-                />
-                <button type="submit" class="footer__button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    width="24"
-                    height="24"
-                  >
-                    <path
-                      d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                    />
-                  </svg>
-                </button>
+              <div class="plan">
+                <h3 class="plan__title">Customized</h3>
+                <p class="plan__price">$10.00 <span>/ device</span></p>
+                <ul class="plan__features">
+                  <li>Get Access to all our sensors</li>
+                  <li>Access to actuator system</li>
+                  <li>Monthly payments with each sensor</li>
+                  <li>Unlimited plants</li>
+                </ul>
+                <button class="plan__button">Sign Up ↗</button>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
-    <script type="module" src="/src/main.js"></script>
-    <script src="/src/scripts/navbar.js"></script>
-  </body>
+      </section>
+      <!----------- ABOUT TEAM SECTION ------------->
+      <section id="about-team">
+        <strong>A</strong>
+      </section>
+      <!----------- CONTACT US SECTION ------------->
+      <section id="contact-us">
+        <strong>N</strong>
+      </section>
+    </main>
+    <!----------- FOOTER ------------->
+    <footer style="border: 1px solid #000">
+      <p>© 2023 Eco Guardian</p>
+      <p>All rights reserved.</p>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
